@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: #1f1f1f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc00 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffcc00 !important;
+  font-weight: bold;
+}
+
+/* Movie List Styles */
+.list-group-item {
+  background: #1e1e1e;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.list-group-item button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.list-group-item button:hover {
+  background-color: darkred;
+}
+
+/* Movie Form */
+#add-movie-form {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#add-movie-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+
+#add-movie-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-movie-form button:hover {
+  background-color: #e6b800;
+}
+
+/* Filter Section */
+#filter-section {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#filter-header {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffcc00;
+  color: black;
+  border-radius: 5px;
+}
+
+#filter-options {
+  display: none;
+  padding-top: 10px;
+}
+
+#filter-options input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+
+/* Animation for Random Movie Selection */
+.selected {
+  animation: glowAnimation 1s ease-in-out infinite alternate;
+}
+
+/* Keyframes for glowing effect */
+@keyframes glowAnimation {
+  0% {
+    background-color: #ffcc00;
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+  }
+  100% {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+  }
+}
